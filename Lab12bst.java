@@ -13,22 +13,22 @@ import java.util.ArrayList;
 
 public class Lab12bst
 {
-	public static void main(String[] args)
-	{   
-      Deck deck = new Deck();
-      System.out.println(deck);
-	}
+    public static void main(String[] args)
+    {   
+        Deck deck = new Deck();
+        System.out.println(deck);
+    }
 }
 
 
 class Deck 
 {
-	private ArrayList<Card> cards;
-	private int size;
+    private ArrayList<Card> cards;
+    private int size;
 
-	public Deck() 
-   {
-      size = 52;
-		cards = new ArrayList<Card>();
-	}    
- }
+    public Deck() 
+    {
+        size = 52;
+        cards = new ArrayList<Card>();
+    }    
+}
