@@ -30,5 +30,17 @@ class Deck
     {
         size = 52;
         cards = new ArrayList<Card>();
+        
+        String[] suits = {"Hearts", "Spades", "Diamonds", "Clubs"};
+        String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "King", "Queen", "Ace"};
+        int[] values = {2,3,4,5,6,7,8,9,10,10,10,10,11};
+        
+        for(String currentSuit: suits)
+        {
+            for(int i = 0; i < ranks.length; i++)
+            {
+                cards.add(new Card(currentSuit, ranks[i], values[i]));
+            }
+        }
     }    
 }
