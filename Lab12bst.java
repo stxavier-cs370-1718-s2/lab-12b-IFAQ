@@ -42,5 +42,19 @@ class Deck
                 cards.add(new Card(currentSuit, ranks[i], values[i]));
             }
         }
-    }    
+    }
+    
+    /**
+     * Returns the string version of the Deck, which is a listing of all cards in the deck on new lines
+     * @return String The string version of the Deck
+     */
+    public String toString()
+    {
+        String output = "";
+        
+        for(Card currentCard: cards)
+            output += currentCard.toString() + "\n";
+        
+        return output;
+    }
 }
